@@ -12,7 +12,7 @@
         // Node/CommonJS
         module.exports = factory();
 
-    } els {
+    } else {
 
         // Browser globals
         window.noUiSlider = factory();

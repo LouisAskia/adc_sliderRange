@@ -1,0 +1,20 @@
+{%
+Dim suffix
+Dim rs = CurrentQuestion.AvailableResponses
+Dim i
+%}
+<div id="adc_{%= CurrentADC.InstanceId %}" class="adc-slider-range-{%= CurrentADC.InstanceId %}">
+    <div class="containers">
+        <div id="sliderRange-{%= CurrentADC.InstanceId %}" class="sliderRange"></div>
+        <div id="hidden-inputs-{%= CurrentADC.InstanceId %}">
+        </div>
+    </div>
+    <div id="container-{%= CurrentADC.InstanceId %}" class="containers buttons">
+        {%For i = 1 To rs.count
+    		If rs[i].IsExclusive Then %}
+        <input type="button" name="{%= rs[i].InputName() %}" class="exclusive" value="{%= rs[i].Caption %}"/>
+        <input type="hidden" name="{%= rs[i].InputName() %}" class="input-exclusive" value="{%= rs[i].InputValue() %}"/>
+    	{%EndIf
+		Next%}
+    </div>
+</div>

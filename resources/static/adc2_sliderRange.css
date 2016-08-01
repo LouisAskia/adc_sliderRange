@@ -1,0 +1,52 @@
+ul, li {
+    list-style : none;
+}
+
+.sliderRange {
+    margin : 30px;
+    margin : auto
+}
+
+.containers {
+    position : relative;
+}
+
+.containers.buttons  {
+    margin-top : 80px;
+}
+
+.noUi-tooltip {
+    word-wrap : break-word;
+    width : 50px;
+    margin-top : 30px;
+	position : static;
+}
+
+.startAndEnd {
+    position  : absolute;
+}
+
+#adc-slider-range-start {
+    left : 0%;
+}
+
+#adc-slider-range-end {
+    left : 96%;
+}
+
+.exclusive {
+    display 		: block;
+    box-shadow 		: 1px 1px 2px 0 #999;
+    border-radius 	: 2px;
+    width 			: 100%;
+    padding 		: 7px 0;
+
+}
+
+.containers {
+    margin : auto;
+}
+
+.input-slider {
+    display : none;
+}

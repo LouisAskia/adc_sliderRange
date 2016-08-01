@@ -1,0 +1,21 @@
+{%
+Dim suffix
+Dim rs = CurrentQuestion.ParentLoop.AvailableResponses
+Dim i
+%}
+
+<div id="adc_{%= CurrentADC.InstanceId %}" class="adc-slider-range-{%= CurrentADC.InstanceId %}">
+    <div class="containers">
+        <div id="sliderRange-{%= CurrentADC.InstanceId %}" class="sliderRange"></div>
+        <div id="hidden-inputs-{%= CurrentADC.InstanceId %}">
+        </div>
+    </div>
+    <div id="container-{%= CurrentADC.InstanceId %}" class="containers buttons">
+        {%If rs.count >= 3 Then %}
+        	{%For i = 3 To rs.count %}
+        	<input type="button" name="{%= rs[i].InputName() %}" class="exclusive" value="{%= rs[i].Caption %}"/>
+        	<input type="hidden" name="{%= rs[i].InputName() %}" class="input-exclusive" value="{%= rs[i].InputValue() %}"/>
+			{%Next%}
+        {%EndIf %}
+    </div>
+</div>

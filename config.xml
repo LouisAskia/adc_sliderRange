@@ -21,7 +21,7 @@
     <constraints>
       <constraint on="questions" chapter="false" single="false" multiple="true" numeric="true" date="false" open="false" requireParentLoop="false" />
       <constraint on="controls" responseblock="true" label="false" textbox="false" checkbox="false" listbox="false" radiobutton="false" />
-      <constraint on="respnses" max="*" min="*" />
+      <constraint on="responses" max="*" min="*" />
     </constraints>
   </info>
   <outputs defaultOutput="Fallback">

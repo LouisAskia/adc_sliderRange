@@ -24,7 +24,7 @@
       <constraint on="responses" max="*" min="*" />
     </constraints>
   </info>
-  <outputs defaultOutput="Fallbck">
+  <outputs defaultOutput="Fallbak">
     <output id="Fallback">
       <description><![CDATA[is javascript not supported]]></description>
       <condition><![CDATA[Not(Browser.Support("javascript"))]]></condition>
